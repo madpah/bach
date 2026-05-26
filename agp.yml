@@ -23,6 +23,13 @@ validation:
     - "vendor/bin/phpcs"
   timeout: 10m
 
+agent:
+  enabled: false
+  provider: bedrock
+  model: TBC 
+  awsRegion: us-west-2
+  maxFixAttempts: 3
+
 # Pull request settings.
 pr:
   labels: [dependencies, automated, agp]
